@@ -1,0 +1,15 @@
+spring:
+  http:
+    encoding:
+      charset: utf-8
+      force: true
+      enabled: true
+  thymeleaf:
+    mode: HTML
+  profiles:
+    active: dev
+server:
+  servlet:
+    session:
+      tracking-modes: cookie
+comment.avatar: /images/avatar.png

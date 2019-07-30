@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.5.130:3306/blog1?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+    username: root
+    password: 123456
+    jpa:
+      hibernate:
+        ddl-auto: none
+      show-sql: true
+logging:
+  level:
+    root: warn
+    com.bowen.myblog: info
+  file: log/blog-pord.log
+server:
+  port: 8081
